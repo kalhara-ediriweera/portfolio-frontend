@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Cpu, Users, Shield, Search, Layout, Code, 
-  ExternalLink, Github, Send, Briefcase, 
+  ExternalLink, Github, Linkedin, Mail, Phone, Send, Briefcase, 
   GraduationCap, Calendar, MapPin, CheckCircle, ArrowRight
 } from 'lucide-react';
 import api from '../api';
+import profileImg from '../assets/profile.jpg';
 
 // Icon Map helper to render Lucide Icons dynamically based on string
 const IconMap = {
@@ -102,21 +103,29 @@ const Home = () => {
       {/* ================= HERO SECTION ================= */}
       <section className="sectionHero container" id="home" style={{ paddingTop: '160px', paddingBottom: '80px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '40px', alignItems: 'center' }} className="hero-grid">
-          <div>
-            <span className="tag" style={{ marginBottom: '16px', display: 'inline-block' }}>Leading Edge Portfolio</span>
-            <h1 style={{ fontSize: '3.8rem', lineHeight: '1.1', marginBottom: '24px', fontWeight: '800' }}>
-              We Bring <span className="text-gradient" style={{ color: 'var(--accent-color)', WebkitTextFillColor: 'unset', background: 'unset' }}>Cutting Edge</span> Digital Solutions.
+          <div className="fade-in-up">
+            <span className="tag" style={{ marginBottom: '16px', display: 'inline-block' }}>Software Engineer Portfolio</span>
+            <h1 style={{ fontSize: '3.8rem', lineHeight: '1.1', marginBottom: '24px', fontWeight: '800' }} className="fade-in-up delay-1">
+              Hi, I'm <span className="text-gradient" style={{ color: 'var(--accent-color)', WebkitTextFillColor: 'unset', background: 'unset' }}>Kalhara K Ediriweera</span>
             </h1>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.15rem', lineHeight: '1.6', marginBottom: '32px', maxWidth: '600px' }}>
-              Transforming creative conceptual workflows into secure, high-performance web applications. Empowering digital presence with state-of-the-art software systems.
+            <p style={{ color: 'var(--text-muted)', fontSize: '1.15rem', lineHeight: '1.6', marginBottom: '32px', maxWidth: '600px' }} className="fade-in-up delay-2">
+              I am an enthusiastic Information Technology undergraduate specializing in Software Engineering at SLIIT. I have a strong interest in full stack development, building high-performance web and mobile applications with clean architecture and robust performance.
             </p>
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-              <a href="#contact" className="btn btn-primary">Start Your Project <ArrowRight size={18} /></a>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }} className="fade-in-up delay-3">
+              <a href="#contact" className="btn btn-primary">Hire Me <ArrowRight size={18} /></a>
               <a href="#projects" className="btn btn-secondary">Explore Showcase</a>
+              <div style={{ display: 'flex', gap: '16px', marginLeft: '12px' }} className="social-links-hero">
+                <a href="https://github.com/kalhara-ediriweera" target="_blank" rel="noreferrer" className="social-icon-btn">
+                  <Github size={22} />
+                </a>
+                <a href="https://linkedin.com/in/kalhara-ediriweera/" target="_blank" rel="noreferrer" className="social-icon-btn">
+                  <Linkedin size={22} />
+                </a>
+              </div>
             </div>
           </div>
           
-          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center' }} className="fade-in-up delay-3">
             {/* Visual Decorative Frame */}
             <div className="glass-panel animate-float" style={{ 
               padding: '24px', 
@@ -127,13 +136,13 @@ const Home = () => {
               zIndex: 2,
               border: '1px solid rgba(0, 223, 137, 0.2)'
             }}>
-              <div style={{ background: '#0a0f16', borderRadius: '16px', overflow: 'hidden', height: '280px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Cpu size={120} className="animate-spin-slow" style={{ color: 'var(--accent-color)', opacity: 0.8 }} />
+              <div style={{ background: '#0a0f16', borderRadius: '16px', overflow: 'hidden', height: '350px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img src={profileImg} alt="Kalhara K Ediriweera" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
-                  <h3 style={{ fontSize: '1.1rem', marginBottom: '4px' }}>Creative Architecture</h3>
-                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Your Business Needs Modern Solutions</p>
+                  <h3 style={{ fontSize: '1.1rem', marginBottom: '4px' }}>Kalhara K Ediriweera</h3>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>Software Engineer</p>
                 </div>
                 <div style={{ width: '12px', height: '12px', borderRadius: '50%', background: 'var(--accent-color)', boxShadow: '0 0 10px var(--accent-color)' }}></div>
               </div>
@@ -438,7 +447,8 @@ const Home = () => {
             <span className="tag">Get In Touch</span>
             <h2 style={{ fontSize: '2.5rem', marginTop: '12px' }} className="text-gradient">Let's Create Something Great</h2>
             <p style={{ color: 'var(--text-muted)', marginTop: '10px' }}>
-              Have an idea, project, or want to say hello? Drop a message. Free consultation call: <strong>+94 702 167 589</strong>
+              Have an idea, project, or want to say hello? Drop a message.<br/>
+              Email: <strong>kavindukalharaofficial@gmail.com</strong> | Phone: <strong>+94 71 034 7359</strong>
             </p>
           </div>
 

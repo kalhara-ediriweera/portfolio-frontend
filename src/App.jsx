@@ -50,10 +50,10 @@ const Navbar = () => {
           justifyContent: 'center',
           boxShadow: '0 0 15px rgba(0,223,137,0.4)'
         }}>
-          <span style={{ color: '#000', fontWeight: '900', fontSize: '1.2rem', fontFamily: 'var(--font-heading)' }}>D</span>
+          <span style={{ color: '#000', fontWeight: '900', fontSize: '1.2rem', fontFamily: 'var(--font-heading)' }}>K</span>
         </div>
         <span style={{ color: 'white', fontWeight: '800', fontSize: '1.2rem', fontFamily: 'var(--font-heading)', letterSpacing: '0.05em' }}>
-          DYNESSCO
+          KALHARA K.
         </span>
       </Link>
 
@@ -161,12 +161,12 @@ const Footer = () => {
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '16px' }}>
             <div style={{ width: '28px', height: '28px', borderRadius: '50%', background: 'var(--accent-color)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <span style={{ color: '#000', fontWeight: '900', fontSize: '0.9rem' }}>D</span>
+              <span style={{ color: '#000', fontWeight: '900', fontSize: '0.9rem' }}>K</span>
             </div>
-            <span style={{ color: 'white', fontWeight: '800', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>DYNESSCO</span>
+            <span style={{ color: 'white', fontWeight: '800', fontSize: '1.1rem', fontFamily: 'var(--font-heading)' }}>KALHARA K.</span>
           </div>
           <p style={{ lineHeight: '1.6', maxWidth: '300px' }}>
-            Transforming corporate landscapes with cutting-edge designs and custom MERN software solutions.
+            Information Technology undergraduate specializing in Software Engineering at SLIIT. Dedicated to building premium, full-stack applications.
           </p>
         </div>
         
@@ -183,8 +183,8 @@ const Footer = () => {
         <div>
           <h4 style={{ color: 'white', marginBottom: '16px', fontSize: '1rem' }}>Contact Info</h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-            <p>Email: contact@dynessco.com</p>
-            <p>Phone: +94 702 167 589</p>
+            <p>Email: kavindukalharaofficial@gmail.com</p>
+            <p>Phone: +94 71 034 7359</p>
             <p>Colombo, Sri Lanka</p>
             <Link to="/login" style={{ color: 'var(--accent-color)', textDecoration: 'none', fontSize: '0.8rem', marginTop: '10px' }}>Admin login</Link>
           </div>
@@ -192,7 +192,7 @@ const Footer = () => {
       </div>
       
       <div className="container" style={{ borderTop: '1px solid var(--border-dim)', paddingTop: '30px', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
-        <p>&copy; {new Date().getFullYear()} Dynessco Portfolio. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Kalhara K Ediriweera. All rights reserved.</p>
         <div style={{ display: 'flex', gap: '20px' }}>
           <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Privacy Policy</a>
           <a href="#" style={{ color: 'var(--text-muted)', textDecoration: 'none' }}>Terms of Service</a>
