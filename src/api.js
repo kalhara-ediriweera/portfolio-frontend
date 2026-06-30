@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://portfolio-backend-rho-indol.vercel.app';
 
 /**
  * Helper to fetch headers with authentication tokens automatically.
